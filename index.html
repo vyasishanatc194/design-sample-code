@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard - Lionheart Fitness Kids</title>
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet"> 
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css"> 
+	<link href="assets/css/bootstrap-datetimepicker.min.css" media="all" rel="stylesheet" type="text/css" />
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/forms/selects/bootstrap_select.min.js"></script>
+	<script type="text/javascript" src="assets/js/forms/form_bootstrap_select.js"></script>
+	<script type="text/javascript" src="assets/js/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/datatables_basic.js"></script>
+	<script type="text/javascript" src="assets/js/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="assets/js/datatables_sorting.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.scrollbar.js"></script>
+	<!-- /theme JS files -->
+
+	<script>
+		/* 
+			$(document).ready(function(){
+				$(".mobile-menu1").click(function(){
+					
+				});
+			}); 
+		*/
+	</script>
+
+</head>
+
+<body class="navbar-top desktop">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse nav-header-div navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile" class="user-dropdown1"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle mobile-menu1"><i class="menu-bars"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="menu-bars"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="index.html">
+						<i class="home-icon-1"></i>
+						<span class="visible-xs-inline-block position-right">Home</span>
+					</a>
+				</li>	
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="notification-icon-1"></i>
+						<span class="visible-xs-inline-block position-right">System Notifications</span>
+						<span class="badge bg-warning-400 badge-custom">2</span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-content">
+						<div class="dropdown-content-heading">
+							System Notifications
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-gear"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body width-300">
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading text-semibold">Jordana Ansley</a>
+									<span class="display-block text-muted text-size-small">Lead web developer</span>
+								</div>
+								<div class="media-right media-middle"><span class="status-mark border-success"></span></div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading text-semibold">Will Brason</a>
+									<span class="display-block text-muted text-size-small">Marketing manager</span>
+								</div>
+								<div class="media-right media-middle"><span class="status-mark border-danger"></span></div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading text-semibold">Hanna Walden</a>
+									<span class="display-block text-muted text-size-small">Project manager</span>
+								</div>
+								<div class="media-right media-middle"><span class="status-mark border-success"></span></div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading text-semibold">Dori Laperriere</a>
+									<span class="display-block text-muted text-size-small">Business developer</span>
+								</div>
+								<div class="media-right media-middle"><span class="status-mark border-warning-300"></span></div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading text-semibold">Vanessa Aurelius</a>
+									<span class="display-block text-muted text-size-small">UX expert</span>
+								</div>
+								<div class="media-right media-middle"><span class="status-mark border-grey-400"></span></div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="" data-original-title="All users"><i class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+				</li><!-- end of notification -->
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="message-icon-1"></i>
+						<span class="visible-xs-inline-block position-right">Messages</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content width-350">
+						<div class="dropdown-content-heading">
+							Messages
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-compose"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body">
+							<li class="media">
+								<div class="media-left">
+									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">5</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">James Alexander</span>
+										<span class="media-annotation pull-right">04:58</span>
+									</a>
+
+									<span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">4</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Margo Baker</span>
+										<span class="media-annotation pull-right">12:16</span>
+									</a>
+
+									<span class="text-muted">That was something he was unable to do because...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Jeremy Victorino</span>
+										<span class="media-annotation pull-right">22:48</span>
+									</a>
+
+									<span class="text-muted">But that would be extremely strained and suspicious...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Beatrix Diaz</span>
+										<span class="media-annotation pull-right">Tue</span>
+									</a>
+
+									<span class="text-muted">What a strenuous career it is that I've chosen...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Richard Vango</span>
+										<span class="media-annotation pull-right">Mon</span>
+									</a>
+									
+									<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+					
+					
+				</li><!-- end of message -->
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/thumb.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right dropdown-width">
+						<li><a href="view-profile.html"><img src="assets/images/icons/eye-222.png" class="img-responsive main-icon-01 eye-white"><span class="span-w">View Profile</span></a></li>
+						<li><a href="edit-profile.html"><img src="assets/images/icons/edit-222.png" class="img-responsive main-icon-01 main-icon-02 edit-white"><span class="span-w">Edit Profile</span></a></li>
+						<li><a href="login.html"><i class="icon-switch2 icon-logout"></i><span class="span-w">Logout</span></a></li>
+					</ul>
+
+				</li>
+			</ul><!-- end of ul navbar-nav -->
+
+		</div>
+
+	</div>
+	<!-- /main navbar -->
+
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content page-content-custom">
+
+			<!-- Main sidebar -->
+			<section class="sidebar-section sidebar-mobile">
+				<div class="sidebar sidebar-main sidebar-div">
+					
+					<div class="sidebar-content" tabindex="2">
+
+						<!-- User menu -->
+						<div class="sidebar-user">
+							<div class="category-content">
+								<div class="media">
+									<a href="#" class="media-left"><img src="assets/images/thumb.jpg" class="img-circle img-sm img-user-1" alt=""></a>
+									<div class="media-body">
+										<span class="media-heading text-semibold">Victoria Baker</span>
+										<div class="text-size-mini text-muted">
+										</div>
+									</div>
+
+									<div class="media-right media-middle">
+										<ul class="icons-list">
+											<li>
+												<a href="#"><i class="icon-gear position-left setting-i"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible sidebar-menu-div min-sidebar">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion ">
+
+								<!-- Main -->
+								
+								<li class="active single_li">
+									<a href="index.html"><i class="icon-i"><img src="assets/images/icons/home.png" class="icon-img"><p class="minimize-span">Dashboard</p></i><span>Dashboard</span></a>
+								</li>
+								
+								<li>
+									<a href="#"><i class="icon-i"><img src="assets/images/icons/class-management.png" class="icon-img"><p class="minimize-span">Class Management</p></i> <span>Class Management</span></a>
+									<ul class="sidebar-menu-child nav-1">
+										<li class="nav-title">Class Management</li>
+										<li><a href="create-parent-account.html">Create Parent Account</a></li>
+										<li><a href="view_summary-active.html">View Summary of Sessions</a></li>
+										<li>
+											<a href="#">Schedule a New Session</a>
+											<ul class="sidebar-menu-child nav-01">
+												<li><a href="schedule-new-session.html">New Class</a></li>
+												<li><a href="birthday-party.html">Birthday Party</a></li>
+												<li><a href="special-event.html">Special Event</a></li>						
+											</ul>
+										</li>
+										<li><a href="classes-myrosters.html">My Rosters</a></li>
+										<li><a href="class-current-invoices.html">Invoicing</a></li>
+										<li><a href="class-discount-codes.html">Discount Codes</a></li>
+										<li><a href="reserve-accounts.html">Reserve Accounts</a></li>
+										<li><a href="attendance_report.html">Attendance Report</a></li>
+									</ul>
+								</li>
+
+								<li class="single_li"><a href="my-money.html"><i class="icon-i"><img src="assets/images/icons/dollar-sign-01.png" class="icon-img dollar-sign"><p class="minimize-span">My Money</p></i><span>My Money</span></a></li>
+
+								<li>
+									<a href="#"><i class="icon-i"><img src="assets/images/icons/coach-corner.png" class="icon-img"><p class="minimize-span">Coach's Corner</p></i> <span>Coach's Corner</span></a>
+									<ul class="sidebar-menu-child nav-1 nav-3">
+										<li class="nav-title">Coach's Corner</li>
+										
+										<li><a href="corner-sample-classes.html">Sample Classes</a></li>
+										<li><a href="corner-drill-setup.html">Drill Set-Ups</a></li>
+										<li><a href="corner-drill-description.html">Drill Descriptions</a></li>
+										<li><a href="corner-basic-guidelines.html">Basic Guidelines</a></li>
+										<li><a href="corner-training-videos.html">Training Videos</a></li>
+										<li><a href="session_update_flyers.html">Session Update Flyers</a></li>
+										<li><a href="system-guide-videos.html">System Guide Videos</a></li>
+									</ul>
+								</li>
+									
+								<li>
+									<a href="#"><i class="icon-i"><img src="assets/images/icons/business-resources.png" class="icon-img"><p class="minimize-span">Business Resources</p></i><span>Business Resources</span></a>
+									<ul class="sidebar-menu-child nav-1 nav-4">
+										<li class="nav-title">Business Resources</li>
+										<li><a href="br-how-guides.html">How to Guides</a></li>
+										<li><a href="br-basic-guidelines.html">LFK Basic Guidelines</a></li>
+										<li>
+											<a href="#">Sales Materials</a>
+											<ul class="sidebar-menu-child nav-01 nav-001">
+												<li><a href="sales-matirial-basic.html">Sales Basic</a></li>
+												<li><a href="sales-tools.html">Sales Tools</a></li>
+												<li><a href="sales-videos.html">Sales Videos</a></li>
+											</ul>
+										</li>
+										<li><a href="br-legal.html">Starting a Business Legal</a></li>
+										<li><a href="br-custom-templates.html">Customizable Templates</a></li>
+										<li><a href="br-logos.html">LFK logos</a></li>
+										<li><a href="br-award-certificates.html">Award Certificates</a></li>
+									</ul>
+								</li>
+
+								<li class="single_li">
+									<a href="my-coursework.html"><i class="icon-i"><img src="assets/images/icons/my-coursework.png" class="icon-img"><p class="minimize-span">Coursework</p></i> <span>My Coursework</span></a>
+								</li>
+								
+								<li class="logout-li single_li"><a href="login.html"><i class="icon-i"><img src="assets/images/icons/logout.png" class="icon-img"><p class="minimize-span">logout</p></i><span>logout</span></a></li>
+							
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+					</div>
+				</div>
+			</section>	
+			<!-- /main sidebar -->
+
+			<!-- Main content -->
+			<div class="content-wrapper content-area-div">
+
+				<!-- Page header -->
+				<div class="page-header page-header-top">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4> <span class="text-semibold">Dashboard</span></h4>
+						</div>
+						<div class="heading-elements div_top_heading">
+							<div class="heading-btn-group">
+								<a href="classes-myrosters.html" class="btn btn-link btn-float has-text"><i class="icon-i-2"><img src="assets/images/icons/folder.png" class="icon-img-2"></i> <span>My Rosters</span></a>
+								<a href="class-tracker.html" class="btn btn-link btn-float has-text"><i class="icon-i-2"><img src="assets/images/icons/calendar.png" class="icon-img-2"></i> <span>Master Calendar</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of top header section -->
+
+				<div class="topic-header-div clearfix">
+					<div class="col-md-8 col-sm-6">
+						<h1 class="h1-title">Dashboard</h1>
+					</div>
+					<div class="col-md-4 col-sm-6 clearfix">
+						<div class="input-box">
+							<div class="input-group clearfix">
+								<input type="text" class="form-control" placeholder="Enter Class Name">
+								<span class="input-group-addon"><i class="fa fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+				</div><!-- end of topic-header-div -->
+
+				<section class="middle-area-section">
+					<div class="middle-area-div dashboard facility-dashboard clearfix">
+						
+						<div class="col-md-6 col-sm-12 clearfix">
+							<div class="panel-group panel-group-control content-group-lg" id="accordion-control">
+								<div class="panel panel-flat add-new-class account-info-div">
+									<div class="panel-heading">
+										<h6 class="panel-title title-form">MONTHLY STATS </h6>
+									</div>
+									
+									<div class="panel-body clearfix">
+										<img src="assets/images/graph-1.jpg" class="img-responsive img-graph">
+									</div>
+								</div><!-- end of panel -->
+							</div>
+						</div>	
+
+						<div class="col-md-6 col-sm-12 clearfix">
+							<div class="panel-group panel-group-control content-group-lg" id="accordion-control">
+						
+								<div class="panel panel-flat add-new-class account-info-div">
+									<div class="panel-heading">
+										<h6 class="panel-title title-form">YEARLY STATS </h6>
+									</div>
+									
+									<div class="panel-body clearfix">
+										<img src="assets/images/graph-2.jpg" class="img-responsive img-graph">
+									</div>
+								</div><!-- end of panel -->
+								
+							</div>
+						</div>	
+
+						<div class="col-md-12 col-sm-12 clearfix">
+							
+							<div class="dashboard_row clearfix">
+								<div class="col-md-3 col-sm-6 grid-col">
+									<div class="box-grid clearfix">
+										<div class="thumb-icon">
+											<img src="assets/images/icons/calendar-01.svg" class="img-responsive img1 img-icon">
+										</div>
+										<div class="bottom-div">	
+											<h1>2</h1>
+											<h5>MONTHLY</h5>
+											<p>Registrations</p>
+
+										</div>
+									</div>
+								</div><!-- End of grid-col --> 
+								<div class="col-md-3 col-sm-6 grid-col">
+									<div class="box-grid bg-yellow clearfix">
+										<div class="thumb-icon">
+											<img src="assets/images/icons/calendar-2.svg" class="img-responsive img2 img-icon">
+										</div>
+										<div class="bottom-div">	
+											<h1>2</h1>
+											<h5>YEARLY</h5>
+											<p>Registrations</p>
+
+										</div>
+									</div>
+								</div><!-- End of grid-col --> 
+								<div class="col-md-3 col-sm-6 grid-col">
+									<div class="box-grid clearfix">
+										<div class="thumb-icon">
+											<img src="assets/images/icons/presentation.svg" class="img-responsive img1 img-icon">
+										</div>
+										<div class="bottom-div">	
+											<h1>2</h1>
+											<h5>classes</h5>
+											<p>Active Classes</p>
+
+										</div>
+									</div>
+								</div><!-- End of grid-col --> 
+								<div class="col-md-3 col-sm-6 grid-col">
+									<div class="box-grid bg-yellow clearfix">
+										<div class="thumb-icon">
+											<img src="assets/images/icons/clock.svg" class="img-responsive img1 img-icon">
+										</div>
+										<div class="bottom-div">	
+											<h1>2</h1>
+											<h5>RECENT</h5>
+											<p>Recent REG.</p>
+
+										</div>
+									</div>
+								</div><!-- End of grid-col --> 
+							</div><!-- end of dashboard_row -->
+							
+						</div>	
+						
+						<div class="col-md-8 col-sm-7 clearfix">
+								
+							<div class="table-scroll-div scroll-div1">
+								<h3>Recent Registrations (Last 24 Hours)</h3>
+
+					
+								<div class="scrollbar-table">
+									<div class="tbl-header">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th class="col-md-3 col-sm-3 col-xs-3">Child Name</th>
+													<th class="col-md-4 col-sm-4 col-xs-4">Registration Date</th>
+													<th class="col-md-5 col-sm-5 col-xs-5">Classroom name</th>
+												</tr>
+											</thead>
+										</table>
+									</div><!-- end of table-header -->	
+									<div class="tbl-content">
+										<table class="table table-striped">
+											<tbody>
+												<tr>
+													<td class="col-md-3 col-sm-3 col-xs-3">Jacks Sparrow</td>
+													<td class="col-md-4 col-sm-4 col-xs-4">07/25/2018 09:57 AM	</td>
+													<td class="col-md-5 col-sm-5 col-xs-5">Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+												<tr>
+													<td>Jacks Sparrow</td>
+													<td>07/25/2018 09:57 AM	</td>
+													<td>Lorem ipsum dolor sit amet.</td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div>	<!-- end of tbl-content -->
+								</div>	
+
+							</div>
+							
+						</div>	<!-- end of col-7 -->
+
+						<div class="col-md-4 col-sm-5 clearfix">
+							
+							<div class="weather-div">
+								<div class="bg-image-div">
+									<div class="weather-details clearfix">
+										<div class="weather-top-left">
+											<h2>25<sup>0</sup></h2>
+											<p>Rainy</p>
+										</div>
+										<div class="weather-top-right">
+											<img src="assets/images/icons/rain.svg" class="img-responsive weather-icon">
+										</div>
+										<div class="weather-bottom-date">
+											<label class="label-btn today-label">Today</label>
+										</div>
+
+									</div>
+									<div class="grid-footer clearfix">
+										<h3>Los Angeles County, CA</h3>
+									</div>
+								</div>
+
+							</div><!-- end of weather-div -->
+							
+						</div>
+
+					</div><!-- end of middle-area-div -->
+				</section><!-- end of middle-area-section -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+
+	<div class="modal fade custom-modal" id="find-coach-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="myModalLabel">Contact Coach</h4>
+			</div>
+			<div class="modal-body">
+					
+				<div class="clearfix">	
+					
+					<!-- start form -->
+					<div class="col-md-6 col-sm-6 clearfix">							
+						<div class="form-group ">
+							<label>First Name *</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 clearfix">							
+						<div class="form-group ">
+							<label>Last Name *</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 clearfix">							
+						<div class="form-group ">
+							<label>Email *</label>
+							<input type="Email" class="form-control">
+						</div>
+					</div>	
+					<div class="col-md-6 col-sm-6 clearfix">
+						<div class="form-group">
+							<label>Phone *</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 clearfix">							
+						<div class="form-group ">
+							<label>Message</label>
+							<textarea class="form-control text-area-resize" rows="3"></textarea>
+						</div>
+					</div>
+
+					<div class="col-md-12 col-sm-12 clearfix">	
+						<div class="telephone-div">
+							<a class="tel-link-modal" href="tel:232231321"><i class="fa fa-phone call-i"></i> Or give me call! <span class="bold-text">232231321</span></a>
+						</div>						
+					</div>
+					<!-- end of form -->
+					
+				</div>
+				
+			</div>
+			<div class="modal-footer custom-footer">
+				<button type="button" class="btn btn-primary">Add a Child</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="assets/js/moment.js"></script> 
+	<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js"></script> 
+	<script type="text/javascript" src="assets/js/validator.min.js"></script> 
+	<script type="text/javascript" src="assets/js/custom.js"></script> 
+
+</body>
+</html>
+
